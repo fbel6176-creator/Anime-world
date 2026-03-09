@@ -2,25 +2,28 @@
 <html>
 <head>
 <title>Anime World</title>
+
 <style>
+
 body{
-font-family: Arial;
-background-color:#0f172a;
-color:white;
 margin:0;
+font-family:Arial;
+background:#0f172a;
+color:white;
 }
 
 header{
-background:#111827;
+background:#020617;
 padding:20px;
 text-align:center;
-font-size:30px;
+font-size:35px;
 font-weight:bold;
+color:#38bdf8;
 }
 
 nav{
-background:#1f2937;
-padding:10px;
+background:#1e293b;
+padding:15px;
 text-align:center;
 }
 
@@ -31,23 +34,43 @@ text-decoration:none;
 font-weight:bold;
 }
 
-section{
-padding:20px;
+nav a:hover{
+color:#38bdf8;
+}
+
+.banner{
+background:#111827;
+padding:40px;
+text-align:center;
+}
+
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
 }
 
 .card{
 background:#1e293b;
-padding:15px;
+width:250px;
 margin:15px;
+padding:15px;
+border-radius:10px;
+text-align:center;
+}
+
+.card img{
+width:100%;
 border-radius:10px;
 }
 
 footer{
-background:#111827;
+background:#020617;
+padding:15px;
 text-align:center;
-padding:10px;
 margin-top:20px;
 }
+
 </style>
 </head>
 
@@ -62,29 +85,38 @@ margin-top:20px;
 <a href="#">Actualités</a>
 <a href="#">Images</a>
 <a href="#">Musiques</a>
-<a href="#">Articles</a>
+<a href="#">Top Anime</a>
 </nav>
 
-<section>
-
-<div class="card">
+<div class="banner">
 <h2>Bienvenue sur Anime World</h2>
-<p>Le site pour les fans d'anime et manga. Retrouvez les dernières actualités, images et musiques d'anime.</p>
+<p>Actualités, images et musiques de vos anime préférés</p>
+</div>
+
+<section class="container">
+
+<div class="card">
+<img src="mha.jpg">
+<h3>My Hero Academia</h3>
+<p>Un anime sur un monde rempli de super héros.</p>
 </div>
 
 <div class="card">
-<h2>Actualité Anime</h2>
-<p>Découvrez les nouveaux épisodes et les nouvelles saisons d'anime populaires.</p>
+<img src="jjk.jpg">
+<h3>Jujutsu Kaisen</h3>
+<p>Des combats incroyables contre des esprits maudits.</p>
 </div>
 
 <div class="card">
-<h2>Images Anime</h2>
-<p>Téléchargez des fonds d'écran anime pour votre téléphone et ordinateur.</p>
+<img src="naruto.jpg">
+<h3>Naruto</h3>
+<p>L'histoire d'un ninja qui veut devenir Hokage.</p>
 </div>
 
 <div class="card">
-<h2>Musiques Anime</h2>
-<p>Écoutez les openings et OST de vos anime préférés.</p>
+<img src="aot.jpg">
+<h3>Attack on Titan</h3>
+<p>Une guerre intense contre les Titans.</p>
 </div>
 
 </section>
@@ -94,19 +126,8 @@ Anime World © 2026
 </footer>
 
 </body>
-</<div class="card">
-<h2>Article : My Hero Academia</h2>
-<p>My Hero Academia est un anime sur un monde où presque tout le monde possède des pouvoirs appelés Alter.</p>
-</div>>
-<div class="card">
-<h2>Image Anime</h2>
-<img src="image-anime.jpg" width="300">
-</div><div class="card">
-<h2>Musique Anime</h2>
-<audio controls>
-<source src="music-anime.mp3" type="audio/mpeg">
-</audio>
-</div><div class="card">
-<h2>Actualité Anime</h2>
-<p>La nouvelle saison de Jujutsu Kaisen arrive bientôt avec de nouveaux combats incroyables.</p>
-</div>naruto.jpg
+</html>
+mha.jpg
+jjk.jpg
+naruto.jpg
+aot.jpg
