@@ -8,23 +8,24 @@
 body{
 margin:0;
 font-family:Arial;
-background:#0f172a;
+background:#0b0b0b;
 color:white;
 }
 
+/* HEADER */
+
 header{
-background:#020617;
-padding:20px;
-text-align:center;
-font-size:35px;
-font-weight:bold;
-color:#38bdf8;
+background:#111;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:15px;
 }
 
-nav{
-background:#1e293b;
-padding:15px;
-text-align:center;
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#f97316;
 }
 
 nav a{
@@ -35,13 +36,41 @@ font-weight:bold;
 }
 
 nav a:hover{
-color:#38bdf8;
+color:#f97316;
 }
+
+/* SEARCH */
+
+.search{
+text-align:center;
+padding:20px;
+background:#181818;
+}
+
+.search input{
+width:60%;
+padding:10px;
+border-radius:5px;
+border:none;
+}
+
+/* BANNER */
 
 .banner{
 background:#111827;
-padding:40px;
+padding:60px;
 text-align:center;
+}
+
+.banner h1{
+font-size:40px;
+}
+
+/* SECTION */
+
+.section-title{
+margin-left:20px;
+margin-top:30px;
 }
 
 .container{
@@ -50,25 +79,43 @@ flex-wrap:wrap;
 justify-content:center;
 }
 
-.card{
-background:#1e293b;
-width:250px;
+/* ANIME CARD */
+
+.anime{
+width:200px;
 margin:15px;
-padding:15px;
+background:#1f1f1f;
 border-radius:10px;
-text-align:center;
+overflow:hidden;
+transition:0.3s;
 }
 
-.card img{
-width:100%;
-border-radius:10px;
+.anime:hover{
+transform:scale(1.05);
 }
+
+.anime img{
+width:100%;
+}
+
+.anime h3{
+padding:10px;
+}
+
+/* VIDEO */
+
+.video{
+text-align:center;
+margin:30px;
+}
+
+/* FOOTER */
 
 footer{
-background:#020617;
-padding:15px;
+background:#111;
 text-align:center;
-margin-top:20px;
+padding:15px;
+margin-top:30px;
 }
 
 </style>
@@ -77,49 +124,65 @@ margin-top:20px;
 <body>
 
 <header>
-<img src="logo.png"width=<200>
-<h1>anime world</h1>
-</header>
+
+<div class="logo">Anime World</div>
+
 <nav>
 <a href="#">Accueil</a>
+<a href="#">Anime</a>
 <a href="#">Actualités</a>
 <a href="#">Images</a>
 <a href="#">Musiques</a>
-<a href="#">Top Anime</a>
 </nav>
 
-<div class="banner">
-<h2>Bienvenue sur Anime World</h2>
-<p>Actualités, images et musiques de vos anime préférés</p>
+</header>
+
+<div class="search">
+<input type="text" placeholder="Rechercher un anime...">
 </div>
+
+<div class="banner">
+<h1>Bienvenue sur Anime World</h1>
+<p>Découvre les meilleurs anime et leurs musiques</p>
+</div>
+
+<h2 class="section-title">🔥 Anime populaires</h2>
 
 <section class="container">
 
-<div class="card">
+<div class="anime">
 <img src="mha.jpg">
 <h3>My Hero Academia</h3>
-<p>Un anime sur un monde rempli de super héros.</p>
 </div>
 
-<div class="card">
+<div class="anime">
 <img src="jjk.jpg">
 <h3>Jujutsu Kaisen</h3>
-<p>Des combats incroyables contre des esprits maudits.</p>
 </div>
 
-<div class="card">
+<div class="anime">
 <img src="naruto.jpg">
 <h3>Naruto</h3>
-<p>L'histoire d'un ninja qui veut devenir Hokage.</p>
 </div>
 
-<div class="card">
+<div class="anime">
 <img src="aot.jpg">
 <h3>Attack on Titan</h3>
-<p>Une guerre intense contre les Titans.</p>
 </div>
 
 </section>
+
+<h2 class="section-title">🎵 Opening Anime</h2>
+
+<div class="video">
+
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+</div>
 
 <footer>
 Anime World © 2026
@@ -127,7 +190,3 @@ Anime World © 2026
 
 </body>
 </html>
-mha.jpg
-jjk.jpg
-naruto.jpg
-aot.jpg
